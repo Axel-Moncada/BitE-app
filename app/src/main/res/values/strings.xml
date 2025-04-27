@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BiteStore</string>
+
+        <string name="banner_title">¡Descubre\nlo último\nen tu tienda\nfavorita!</string>
+        <string name="discounts_button_text">¡Descuentos!</string>
+        <string name="samsung_monitor_1_title">Monitor SAMSUNG 24" Pulgadas T350F FHD Plano Gris/Azul</string>
+        <string name="original_price">$ 499.000</string>
+        <string name="discounted_price">$ 399.000</string>
+        <string name="buy_now">Comprar ahora</string>
+        <string name="monitor_image">Monitor image</string>
+        <string name="tablet_image">Tablet image</string>
+        <string name="phone_image">Phone image</string>
+        <string name="laptop_image">Laptop image</string>
+        <string name="samsung_monitor_image">Samsung monitor image</string>
+
+</resources>
