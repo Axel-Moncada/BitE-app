@@ -1,9 +1,7 @@
 package com.example.bitestore.Activities
 import android.content.Intent
 import android.os.Bundle
-import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
-import com.example.bitestore.MainActivity
 import com.example.bitestore.R
 import android.widget.Button
 
@@ -14,7 +12,7 @@ class InicioActivity  : AppCompatActivity() {
         setContentView(R.layout.activity_inicio)
 
         // Botón de "Iniciar Sesión"
-        val buttonInicioSesion = findViewById<Button>(R.id.buttonInicioSesion)
+        val buttonInicioSesion = findViewById<Button>(R.id.signUpButton)
 
         buttonInicioSesion.setOnClickListener {
             val intent = Intent(this, InicioSesionActivity::class.java)

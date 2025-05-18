@@ -1,42 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <!-- ✅ Header superior (logo + iconos) -->
+    <include layout="@layout/headermenu" />
+
+    <!-- ✅ Fragment container: aquí aparece ListaProductosFragment o CarritoFragment -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:name="com.example.bitestore.fragments.ListaProductosFragment"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize" />
+
+    <!-- ✅ Botón flotante mapa -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_mapa"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <include layout="@layout/headermenu" />
-
-        <ImageView
-            android:id="@+id/banner_image_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:scaleType="fitXY"
-            android:src="@drawable/banner1" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/input_text"
-            android:paddingHorizontal="32dp"
-            android:paddingVertical="8dp"
-            android:text="@string/discounts_button_text"
-            android:textColor="@color/azul_oscuro"
-            android:textSize="28sp"
-            android:fontFamily="@font/montserrat_extrabold"
-            android:textStyle="bold" />
-
-        <include layout="@layout/cardproductos" />
-        <include layout="@layout/cardproductos" />
-        <include layout="@layout/cardproductos" />
-
-
-    </LinearLayout>
-
-</ScrollView>
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/iconmap"
+        android:contentDescription="Sede más cercana"
+        android:backgroundTint="@color/azul_claro"
+        app:tint="@null"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

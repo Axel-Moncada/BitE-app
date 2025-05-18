@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "660862816819",
+    "project_id": "bitestpreapp",
+    "storage_bucket": "bitestpreapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660862816819:android:4168fa2a3ecf36b9e94946",
+        "android_client_info": {
+          "package_name": "com.example.bitestore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSfBFtO3mU3nf6YaSKHzU41HnL8GxnMpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
